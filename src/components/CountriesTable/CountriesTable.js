@@ -102,8 +102,8 @@ const CountriesTable = ({ countries = [] }) => {
 
       {orderedCountries.map(
         ({ name, population, alpha3Code, area = 0, gini = 0, flag }) => (
-          <Link href={`/country/${alpha3Code}`}>
-            <div className={styles.row} key={alpha3Code}>
+          <Link href={`/country/${alpha3Code}`} key={alpha3Code}>
+            <div className={styles.row}>
               <div className={styles.flag}>
                 <img src={flag} alt={name} />
               </div>
